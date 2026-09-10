@@ -1,0 +1,6 @@
+# Runtime dependencies for deployment (Render, Railway, Heroku, etc.)
+# Installs the parsons package itself (pulls in Flask, SQLAlchemy, ... from setup.py)
+# plus the WSGI server and the Postgres driver.
+-e .
+gunicorn
+psycopg2-binary
